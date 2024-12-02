@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Multithreaded Web Server</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #4caf50;
+      }
+      h2 {
+        color: #333;
+        border-bottom: 2px solid #4caf50;
+        padding-bottom: 5px;
+      }
+      p,
+      li {
+        line-height: 1.6;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .feature-item {
+        background-color: #e8f5e9;
+        border: 1px solid #4caf50;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>About Multithreaded Web Server</h1>
+
+      <h2>Project Overview</h2>
+      <p>
+        Multithreaded Web Server is implemented in Python. It is designed to
+        handle multiple client requests simultaneously, serving static files
+        from the server's file system. This lightweight server provides the
+        essential functions of a basic web server, allowing users to host HTML
+        pages, CSS, JavaScript, and other static files.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li class="feature-item">
+          <strong>Concurrent Client Handling:</strong> Efficiently handles
+          multiple client connections using threads, supporting high
+          concurrency.
+        </li>
+        <li class="feature-item">
+          <strong>Static File Serving:</strong> Serves HTML, CSS, JavaScript,
+          images, and text files directly to clients.
+        </li>
+        <li class="feature-item">
+          <strong>Basic HTTP Support:</strong> Handles simple HTTP GET requests,
+          enabling clients to retrieve server resources.
+        </li>
+        <li class="feature-item">
+          <strong>Request Logging:</strong> Logs client IP, requested resource,
+          and response status to a log file, providing an access history.
+        </li>
+        <li class="feature-item">
+          <strong>Error Handling:</strong> Responds with appropriate HTTP error
+          codes for missing or restricted files, including 404 (Not Found) and
+          500 (Internal Server Error).
+        </li>
+        <li class="feature-item">
+          <strong>Resource Synchronization:</strong> Ensures thread-safe access
+          to shared resources, preventing data conflicts.
+        </li>
+        <li class="feature-item">
+          <strong>Dynamic Content:</strong> Generates dynamic content such as a
+          digital clock and current date/time via a REST API or a custom HTML
+          page.
+        </li>
+      </ul>
+
+      <h2>How to Use</h2>
+      <p>
+        To use the server, simply place HTML and other static files in the
+        <strong>static</strong> directory. The server will automatically serve
+        files from this directory based on the client’s request URL.
+      </p>
+      <p>
+        To access the server from your browser, enter the IP address and port in
+        the following format:
+      </p>
+      <pre>http://127.0.0.1:8080/index.html</pre>
+      <p>
+        Replace <code>127.0.0.1</code> with your server’s IP address if
+        connecting from a different device on the same network.
+      </p>
+
+      <h2>Contact Information</h2>
+      <p>
+        For questions or contributions, please contact the project maintainer at
+        <a href="mailto:tonmoyroy2077@gmail.com">support@teamdomain.com</a>.
+      </p>
+
+      <div class="footer">
+        <p>&copy; 2023 Multithreaded Web Server. All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
