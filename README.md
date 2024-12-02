@@ -17,7 +17,24 @@ The **Multithreaded Web Server** is implemented in Python. It is designed to han
 - **Dynamic Content**: Generates dynamic content such as the current date, time, or a digital clock using a REST API or custom HTML pages.
 
 ---
+## Concurrent Testing with ApacheBench
 
+### Making a GET request to our server
+
+Run the following command in your terminal, in the directory where your `ab` and `abs` executable files are located:
+
+```bash
+./ab -c 10 -n 20 http://localhost:8080/
+```
+-c Concurrency: 
+This indicates the number of multiple requests to make at a time. For this test, we are sending 10 requests to our server concurrently at the same time.
+
+-n Request: 
+This indicates the number of requests to perform. For this test, we are sending 20 requests in total.
+
+For more information, visit the [Apache Benchmark documentation](https://httpd.apache.org/docs/2.4/programs/ab.html).
+
+---
 ## How to Use
 1. Clone this repository to your local machine:
    ```bash
